@@ -1,6 +1,6 @@
 task_breakdown:
   description: >
-    Carefully analyze the project_requirements for the {project_type}
+    Carefully analyze the project requirements for the {project_type}
     project and break them down into individual tasks. Define each
     task's scope in detail, set achievable timelines, and ensure that
     all dependencies are accounted for:
@@ -16,6 +16,7 @@ task_breakdown:
     dependencies, and deliverables. Your final output MUST include a
     Gantt chart or similar timeline visualization specific to the
     {project_type} project.
+  agent: project_planning_agent
 
 time_resource_estimation:
   description: >
@@ -28,6 +29,7 @@ time_resource_estimation:
     effort required for each task in the {project_type} project.
     Your final report MUST include a summary of any risks or
     uncertainties associated with the estimations.
+  agent: estimation_agent
 
 resource_allocation:
   description: >
@@ -45,3 +47,4 @@ resource_allocation:
     responsible for each task in the {project_type} project, along with
     start and end dates. Your final output MUST also include a summary
     explaining the rationale behind each allocation decision.
+  agent: resource_allocation_agent
